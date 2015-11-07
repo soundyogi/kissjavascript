@@ -4818,8 +4818,8 @@ exports.isBuffer = isBuffer;
 function objectToString(o) {
   return Object.prototype.toString.call(o);
 }
-}).call(this,{"isBuffer":require("../../../../../../../../../tldrjavascript/node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
-},{"../../../../../../../../../tldrjavascript/node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":312}],20:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../../tldrjavascript/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../../tldrjavascript/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":312}],20:[function(require,module,exports){
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
@@ -5419,8 +5419,8 @@ CombinedStream.prototype._emitError = function(err) {
   this.emit('error', err);
 };
 
-}).call(this,{"isBuffer":require("../../../../../tldrjavascript/node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
-},{"../../../../../tldrjavascript/node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":312,"delayed-stream":27,"stream":333,"util":343}],27:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../tldrjavascript/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
+},{"../../../../../tldrjavascript/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":312,"delayed-stream":27,"stream":333,"util":343}],27:[function(require,module,exports){
 var Stream = require('stream').Stream;
 var util = require('util');
 
@@ -9274,8 +9274,8 @@ Reader.prototype._readTag = function(tag) {
 
 module.exports = Reader;
 
-}).call(this,{"isBuffer":require("../../../../../../../../tldrjavascript/node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
-},{"../../../../../../../../tldrjavascript/node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":312,"./errors":65,"./types":68,"assert":98}],68:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../../../tldrjavascript/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")})
+},{"../../../../../../../../tldrjavascript/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":312,"./errors":65,"./types":68,"assert":98}],68:[function(require,module,exports){
 // Copyright 2011 Mark Cavage <mcavage@gmail.com> All rights reserved.
 
 
@@ -9904,8 +9904,8 @@ Object.keys(assert).forEach(function (k) {
         };
 });
 
-}).call(this,{"isBuffer":require("../../../../../../tldrjavascript/node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")},require('_process'))
-},{"../../../../../../tldrjavascript/node_modules/watchify/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":312,"_process":315,"assert":98,"stream":333,"util":343}],72:[function(require,module,exports){
+}).call(this,{"isBuffer":require("../../../../../../tldrjavascript/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js")},require('_process'))
+},{"../../../../../../tldrjavascript/node_modules/browserify/node_modules/insert-module-globals/node_modules/is-buffer/index.js":312,"_process":315,"assert":98,"stream":333,"util":343}],72:[function(require,module,exports){
 /*
  * ctf.js
  *
@@ -23965,6 +23965,7 @@ var request = require("request");
 request("https://alpha-soundyogi.c9.io/tldr/0001_theponyfoochallenge.md", function (a, b, c) {
     var node = document.createElement("section");
     var article = node.appendChild(document.createElement("article"));
+    article.classList.add("markdown-body");
     article.innerHTML = marked(c);
     document.body.appendChild(node);
 });

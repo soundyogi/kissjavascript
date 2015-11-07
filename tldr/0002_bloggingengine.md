@@ -5,6 +5,8 @@ https://github.com/lsm/nodepress
 http://xeoncross.github.io/MicroStream/
 https://github.com/vesparny/morpheus
 https://github.com/ponyfoo/ponyfoo
+future:
+https://github.com/mixu/markdown-styles
 
 
 Cradle vs. Minimongo vs. PouchDB
