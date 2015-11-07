@@ -12,7 +12,9 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "github-markdown-css": "^2.1.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.9.12",
     "watchify": "^3.6.0"

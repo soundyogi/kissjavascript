@@ -5,5 +5,5 @@ request("https://alpha-soundyogi.c9.io/tldr/0001_theponyfoochallenge.md", functi
     var node = document.createElement("section") 
     var article = node.appendChild(document.createElement("article"))  
     article.innerHTML = marked(c)
-    document.body.appendChild(node);  
+    document.body.appendChild(node)
 })
