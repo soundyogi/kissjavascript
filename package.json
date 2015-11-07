@@ -1,0 +1,20 @@
+{
+  "name": "tldrjavascript",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: omg fix this pls\" && exit 1",
+    "js": "browserify main.js  -o bundle.js  -t [ babelify ]",
+    "watchjs": "watchify main.js -o bundle.js  -t [ babelify ] -v",
+    "serve": "browser-sync start --server --port='8080' --files='**.**'",
+    "dev": "npm run serve & npm run watchjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.9.12",
+    "watchify": "^3.6.0"
+  }
+}
