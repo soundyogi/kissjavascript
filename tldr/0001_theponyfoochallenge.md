@@ -1,39 +1,50 @@
-tldrjavascript.com
 # the ponyfoo challenge
-## wait what?
+> wait what? - 7.Nov2015 10:40AM
 
-Rules:
+### Rules:
 
-    1. Read ponyfoos entire blog (%2)
-    2. Write a micro blogging platform
-    3. Display your first post as soon as humanly possible*
+    1. read ponyfoos entire blog* (protip: will take some time)
+    2. write a micro blogging platform*
+    3. display your first post as soon as humanly possible*
     
-Inspired by ponyfoo's first post: https://ponyfoo.com/articles/pony-foo-begins
+<sup> *~~stolen~~ _inspired_ by [ponyfoo's first post](https://ponyfoo.com/articles/pony-foo-begins) </sup>
 
-Acceptance Criteria:
+### personal current acceptance criteria:
 
-This is a micro-blogging "engine" it should have tests and render markdown and be pretty
+    a micro blogging "engine":
+    should have tests,
+    should render markdown files,
+    should pretty
     
-#### blog "engine"
-This is a markdown file renderen clientside, served by browser-sync.
+#### tests
+- [] nope :O
 
-#### pretty:
-github-flavoured-css
+#### render markdown
+- [x] a markdown file rendered clientside, served by http-server
 
-Thats it.
+```javascript
+var marked = require('marked')
+var request = require("request")
 
-Next Time I will show more.
 
-#### why?
+request("http://46.101.246.57/tldr/0001_theponyfoochallenge.md", function(a,b,c){
+    var node = document.createElement("section") 
+    var article = node.appendChild(document.createElement("article"))
+    article.classList.add("markdown-body");
+    article.innerHTML = marked(c)
+    document.body.appendChild(node)
+})
+```
+<sub>this is _all_ of the js bundled with browserify</sub>
 
+#### pretty
+- [x] github-flavoured-css
+
+---
+
+### why?
 I wanted to publish some articles / stuff forever but never hat the guts.
-If you read this. I am sorry :)
-I am not a good writer, I am doing this to improve and document the process.
+I am not a good writer. I am doing this to improve and document the process.
 
-This site is a markdown file rendered clientside served with browser-sync.
-Very Stupid. But does the job.
-
-Next Time I will explain the whole thing.
     
-"This article was online about 2 hours after I read pony foo begins"
-10:44 AM - 7.Nov2015
+>This page was online about 2 hours after I read pony foo begins

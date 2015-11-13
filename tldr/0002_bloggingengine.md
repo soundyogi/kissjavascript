@@ -18,19 +18,11 @@ db / frontend
 
 http://blog.nodejitsu.com/6-must-have-nodejs-modules/
 
-
-    {
-      "name": "tldrjavascript",
-      "version": "0.0.1",
-      "description": "",
-      "main": "index.js",
-      "scripts": {
-      },
-      "author": "",
-      "license": "ISC",
-      "dependencies": {
-      }
-    }
+Stack:
+http-server
+github
+digital-ocean
+markdown
 
     
 7Nov. 2015

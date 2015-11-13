@@ -5,17 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: omg fix this pls\" && exit 1",
-    "js": "browserify main.js  -o bundle.js  -t [ babelify ]",
-    "watchjs": "watchify main.js -o bundle.js  -t [ babelify ] -v",
-    "serve": "browser-sync start --server --port='8080' --files='**/**/**.**'",
-    "dev": "npm run serve & npm run watchjs"
+    "js": "node node_modules/watchify/bin/cmd.js main.js -o bundle.js -v",
+    "sync": "node_modules/browser-sync/bin/browser-sync.js start --server --port='1000' --files='**.js'",
+    "dev": "npm run sync & npm run js",
+    "server": "node_modules/http-server/bin/http-server -p 1000 --cors",
+    "prod": "npm run server & npm run js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "github-markdown-css": "^2.1.0"
+    "github-markdown-css": "^2.1.0",
+    "marked": "^0.3.5",
+    "request": "^2.65.0"
   },
   "devDependencies": {
+    "babelify": "^7.2.0",
     "browser-sync": "^2.9.12",
     "browserify": "^12.0.1",
     "watchify": "^3.6.0"
