@@ -11,14 +11,21 @@ marked.setOptions({
 
 
 request("http://kissjavascript.com/kiss/0001_theponyfoochallenge.md", function(a,b,c){
+
     var node = document.createElement("section") 
     var article = node.appendChild(document.createElement("article"))
     article.classList.add("markdown-body");
     article.innerHTML = marked(c)
     document.body.appendChild(node)
-    
-    
+
 })
+
+
+
+
+
+
+
 },{"marked":252,"request":253}],2:[function(require,module,exports){
 
 },{}],3:[function(require,module,exports){
