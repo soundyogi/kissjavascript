@@ -9,7 +9,7 @@ marked.setOptions({
 });
 
 
-request("http://46.101.246.57/tldr/0001_theponyfoochallenge.md", function(a,b,c){
+request("/kiss/0001_theponyfoochallenge.md", function(a,b,c){
     var node = document.createElement("section") 
     var article = node.appendChild(document.createElement("article"))
     article.classList.add("markdown-body");
@@ -18,6 +18,13 @@ request("http://46.101.246.57/tldr/0001_theponyfoochallenge.md", function(a,b,c)
     
     
 })
+    var text = document.getElementsById("the-ponyfoo-challenge").innerHTML
+    document.getElementsById("the-ponyfoo-challenge").innerHTML = "<p>rr</p>"
+    debugger
+    var words = document.getElementsByClassName('word')
+    var tl = new TimelineMax();
+    tl.staggerTo(words, 1, {top:0, ease:Quart.easeOut}, 0.5);
+
 
 
 },{"marked":252,"request":253}],2:[function(require,module,exports){
