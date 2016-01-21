@@ -1,6 +1,7 @@
 <html>
-<link rel="stylesheet" href="node_modules/github-markdown-css/github-markdown.css">
-<link rel="stylesheet" href="highlight.js/src/styles/github.css">
+    <head>
+        <link rel="stylesheet" href="node_modules/github-markdown-css/github-markdown.css">
+
 <style>
     .markdown-body {
         min-width: 200px;
@@ -52,13 +53,27 @@
         border-left: 1px solid white;
     }
 </style>
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+
+    </head>
+
 <body>
     <img id="ava" src="kiss/images/yogi_ava.png"/>
-    <header><h6>kissJavaScript</h6></header>
+    <header><h6>Keep it stupid simple - JavaScript</h6></header>
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
-    <script src="bundle.js"></script>
     
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+        System.import('./app/main.ts');
+    </script>
 </body>
 
 </html>
