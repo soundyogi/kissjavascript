@@ -1,5 +1,13 @@
 # Write your own TDD / BDD Test Harness in 5 Minutes
 
+When I was getting into testing a while back I was _very_ confused.
+As always there are concepts you have to understand and frameworks to learn.
+
+The First is more painful
+The Second will take the most time
+
+So let us get the concept out of the way by writing a testing harness together
+
 // expressions are values
 
 // step one: a (naive) harness    
